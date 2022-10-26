@@ -18,7 +18,6 @@ export default class ErrorBoundary extends React.Component<
   }
 
   static getDerivedStateFromError(error: Error) {
-    console.log("getDerivedStateFromError ::: \n", { error });
     return { ...initialState, hasError: true, error };
   }
 
